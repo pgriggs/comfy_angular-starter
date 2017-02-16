@@ -1,6 +1,6 @@
   {
   "name": "comfy_angular-starter",
-  "description": "An AngularJS starter app optimized for search engine indexing & SEO",
+  "description": "A minimulist AngularJS starter app built for search engine indexing & SEO",
   "main": "app.js",
   "authors": [
     "Developmon"

@@ -26,7 +26,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/assests/img'));
 });
 
- // Styles task for production build
+ // Styles task for production build (needs fix, not compiling to build/css)
 gulp.task('stylesProd', function() {
     gulp.src('build/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -60,7 +60,8 @@ gulp.task('styles', function() {
         .pipe(livereload());
 });
 
-// http server task
+// development server task w/ fallback for html5 history API 
+// e.g. fallback for removing the # from angular routes so indovidual routes are accesible at their direct path
 gulp.task('connect', function() {
   connect.server({
   	port: 3000,
