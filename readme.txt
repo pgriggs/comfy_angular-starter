@@ -23,7 +23,10 @@ Deploying to production:
 		& to compensate for removing the # from the url for each angular route.
 
 			1. APACHE
-				a. 
+				a. apache2.conf example
+
+				
+
 
 			2. NGINX
 				a. nginx.conf example
