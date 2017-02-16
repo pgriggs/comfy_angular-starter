@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var serve = require('gulp-serve');
 var livereload = require('gulp-livereload');
 var bower = require('gulp-bower');
 var connect = require('gulp-connect');

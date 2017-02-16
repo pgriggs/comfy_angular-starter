@@ -13,7 +13,7 @@
     "starter",
     "angular"
   ],
-  "homepage": "https://github.com/pgriggs/comfyAngular-starter",
+  "homepage": "https://github.com/pgriggs/comfy_angular-starter",
   "private": true,
     "dependencies": {
     "angular": "1.6.1",
