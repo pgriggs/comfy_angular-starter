@@ -10,22 +10,46 @@ Get Started
 
 Deploying to production:
 
-	Production WebServer Adjustments
+	cd comfy_angular-starter
 
-		To compensate for removing the # from url for each angular route, the following line for the respective webservers:
+	npm install
+
+	gulp production
+
+	WebServer configurations:
+
+		To serve the sitemap.xml file,
+
+		& to compensate for removing the # from the url for each angular route.
 
 			1. APACHE
 				a. 
-			2. NGINX
-				a.
-			3. CADDY
-				a.
 
-		To expose the sitemap.xml file:
-
-			1. APACHE
-				a. 
 			2. NGINX
-				a.
+				a. nginx.conf example
+
+
+
+
 			3. CADDY
-				a.
+				a. Caddyfile example
+
+				yoursite.com {
+				root /yourSitesDirectory/build
+				gzip
+					rewrite {
+					        to {path} {path}/ /index.html
+					}
+				}
+
+				http://yoursite.com {
+				    redir https://yoursite.com{uri}
+				}
+
+				www.yoursite.com {
+				    redir https://yoursite.com{uri}
+				}
+
+				http://yoursite.com/sitemap.xml {
+				    root /yourSitesDirectory/build/sitemap.xml
+				}

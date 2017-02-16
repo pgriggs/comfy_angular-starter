@@ -13,33 +13,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         // additional example states
         .state('people', {
-            url: '/people',
-            templateUrl: 'views/product.html',
-            controller: 'peopleController'
-        }) 
-
-        .state('develop', {
-            url: '/develop',
-            templateUrl: 'views/product.html',
-            controller: 'developController'
-        })
-
-        .state('products', {
             url: '/products',
             templateUrl: 'views/product.html',
-            controller: 'productController'
-        })
-
-        .state('jobs', {
-            url: '/jobs',
-            templateUrl: 'views/product.html',
-            controller: 'jobsController'
-        })
-
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'views/product.html',
-            controller: 'contactController'
+            controller: 'productsController'
         });
 
         // use the HTML5 History API e.g. removes the # from the url so search engines will see individual routes
