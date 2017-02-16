@@ -1,0 +1,33 @@
+{
+  "name": "comfy_angular-starter",
+  "version": "1.0.0",
+  "description": "An AngularJS starter app optimized for search engine indexing & SEO",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgriggs/comfyAngular-starter.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "SEO",
+    "AngularJS",
+    "starter",
+    "angular"
+  ],
+  "author": "Developmon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgriggs/comfyAngular-starter/issues"
+  },
+  "homepage": "https://github.com/pgriggs/comfyAngular-starter#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-serve": "^1.4.0"
+  }
+}

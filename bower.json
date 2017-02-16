@@ -1,0 +1,30 @@
+  {
+  "name": "comfy_angular-starter",
+  "description": "An AngularJS starter app optimized for search engine indexing & SEO",
+  "main": "app.js",
+  "authors": [
+    "Developmon"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "SEO",
+    "AngularJS",
+    "starter",
+    "angular"
+  ],
+  "homepage": "https://github.com/pgriggs/comfyAngular-starter",
+  "private": true,
+    "dependencies": {
+    "angular": "1.6.1",
+    "angular-animate": "1.6.1",
+    "angular-ui-router": "0.4.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
