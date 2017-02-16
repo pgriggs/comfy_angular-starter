@@ -31,7 +31,6 @@ gulp.task('stylesProd', function() {
     gulp.src('build/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('build/css/'))
-        .pipe(livereload());
 });
 
 // bower install to gulp task for production build
