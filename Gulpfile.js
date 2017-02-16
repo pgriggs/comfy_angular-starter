@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var serve = require('gulp-serve');
 var livereload = require('gulp-livereload');
 var bower = require('gulp-bower');
+var connect = require('gulp-connect');
 
 // bower install to gulp task
 gulp.task('bower', function() {
@@ -19,10 +20,16 @@ gulp.task('styles', function() {
 });
 
 // http server task
-gulp.task('serve', serve('app'));
+gulp.task('connect', function() {
+  connect.server({
+  	port: 8080,
+    root: 'app/',	
+    livereload: true,
+    fallback: 'app/index.html'
+  });
+});
 
 // Watch task 
-gulp.task('default', ['bower', 'serve'], function() {
-	livereload.listen();
+gulp.task('default', ['bower', 'connect'], function() {
     gulp.watch('app/sass/**/*.scss',['styles']);
 });

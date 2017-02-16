@@ -1,27 +1,11 @@
+/* 
+Initaites the 'services' module which is included in the 'app' module initited in app.js, as well as the 'controllers' module. 
+ */
 angular.module('services', []);
 
-/*
+/* EXAMPLE SERVICE */
 Services.service('featured', function() {
 
   return service;
-});
-
-Services.service('people', function() {
-
-  return service;
-});
-
-Services.service('develop', function() {
-
-  return service;
-});
-
-Services.service('products', function() {
-
-  return service;
-});
-
-Services.service('jobs', function() {
-
-  return service;
-}); */
+}); 
+/* */
