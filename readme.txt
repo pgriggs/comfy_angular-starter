@@ -8,7 +8,7 @@
 
 	--- serves app at localhost:3000
 
-/* Making this starter app your own */
+/* Make this starter app your own */
 
 	--- write your code in app/
 		--- write custom, shared styles in app/sass/*.scss
@@ -18,9 +18,10 @@
 		--- write custom js for specific views in app/views/*/*.js
 
 	--- app/ is compiled to build/ everytime you run 'gulp' or 'gulp production'
-		--- 'gulp production' runs the same build tasks as 'gulp', witout starting the local dev server.
 
-Deploying to production:
+	--- 'gulp production' runs the same build tasks as 'gulp', without starting the local dev server.
+
+/* Deploy to production */
 
 	cd comfy_angular-starter
 
