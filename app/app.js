@@ -1,4 +1,4 @@
-var App = angular.module('App', ['ui.router', 'controllers', 'services', 'angular-google-adsense']);
+var App = angular.module('App', ['ui.router', 'ngMaterial', 'controllers', 'services', 'factories', 'angular-google-adsense']);
 
 var Controllers = angular.module('controllers', []);
 var Factories = angular.module('factories', []);

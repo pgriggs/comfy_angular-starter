@@ -5,6 +5,10 @@
         <!-- route metadata -->
         <title ng-bind="metaservice.metaTitle()"></title>
         <meta name="description" content="{{ metaservice.metaDescription() }}" />
+
+        <!-- Angular Material lib css -->
+        <link rel="stylesheet" href="/lib/vendors/angular-material/angular-material.min.css">
+
         <!-- css generated from scss is concatenated into here -->
         <link rel="stylesheet" href="/css/styles.min.css">
         <!-- Google Fonts! -->
@@ -22,8 +26,16 @@
     <body>
 
         <!-- NAVIGATION -->
-        <div class="top-nav">
-        </div>
+        <md-toolbar class="md-warn md-hue-3" flex>
+            <div class="md-toolbar-tools">
+                <h1>
+                    comfy_angular-starter
+                </h1>
+
+                <span flex>
+                </span>
+            </div>
+        </md-toolbar>
 
 
         <!-- MAIN CONTENT -->
@@ -36,9 +48,12 @@
 
         
          <!-- JS Libraries -->
-        <script src="lib/vendors/angular/angular.js"></script>
-        <script src="lib/vendors/angular-animate/angular-animate.js"></script>
-        <script src="lib/vendors/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="lib/vendors/angular/angular.min.js"></script>
+        <script src="lib/vendors/angular-animate/angular-animate.min.js"></script>
+        <script src="lib/vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="/lib/vendors/angular-aria/angular-aria.min.js"></script>
+        <script type="text/javascript" src="/lib/vendors/angular-messages/angular-messages.min.js"></script>
+        <script type="text/javascript" src="/lib/vendors/angular-material/angular-material.min.js"></script>
 
         <!-- js files -->
         <script src="app.js"></script>

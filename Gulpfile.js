@@ -22,7 +22,7 @@ gulp.task('scripts', function() {
         .pipe(ngAnnotate())
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('build/js'));
 });
 

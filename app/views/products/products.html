@@ -1,3 +1,17 @@
-<section class="products-view">
-	<h1>A list of products!</h1>
-</section>
+<md-content class="products-view">
+	<section>
+		<h1>A list of products!</h1>
+	</section>
+
+	<section>
+		<p>This is an example list of data that is injected into the productsController from the productsDataFactory, and then displayed in the view using ng-repeat.
+		</p>
+		<ul>
+			<li ng-repeat="item in productsData">
+				<span>
+					{{item.title}}
+				</span>
+			</li>
+		</ul>
+	</section>
+</md-content>

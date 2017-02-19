@@ -1,3 +1,33 @@
-<section>
-	<h1>Welcome, welcome.</h1>
-</section>
+<md-content class="home-view" layout-padding>
+	<section>
+		<h1 ng-bind="sectionContent[0].sec1">
+		</h1>
+
+		<a ui-sref="products()" ng-bind="sectionContent[0].sec1subheader">
+		</a>
+
+		<br>
+		<br>
+
+		<a href="/products" ng-bind="sectionContent[0].sec1subheader2">
+		</a>
+	</section>
+
+	<section>
+		<h2 ng-bind="sectionContent[1].sec2"></h2>
+		<p ng-bind="sectionContent[1].sec2subheader"></p>
+		<div>
+			<md-card ng-repeat="featuredItem in pageContent">
+					<md-card-header>
+						<a ng-href="{{featuredItem.url}}" target="_blank">
+							<p ng-bind="featuredItem.title"></p>
+						</a>
+					</md-card-header>
+					<br>
+					<md-card-content>
+						<p ng-bind="featuredItem.desc"></p>
+					</md-card-content>
+			</md-card>
+		</div>
+	</section>
+</md-content>
