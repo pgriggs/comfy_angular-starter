@@ -6,7 +6,7 @@ angular.module('controllers')
 /*  */
 
 /* set meta title & description */
-	$rootScope.metaservice.set("A venture technology company | opusLogica", "We help the bold develop historic products.");
+	$rootScope.metaservice.set("Homepage title tag | yourSiteName", "Homepage title desciption.");
 /*  */
 
 /* load $http response data into the controller from homeDataFactory */

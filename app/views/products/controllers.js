@@ -7,7 +7,7 @@ angular.module('controllers')
 /*  */
 
 /* set meta title & description */
-  $rootScope.metaservice.set("products | opusLogica", "A list of products.");
+  $rootScope.metaservice.set("products page title tag | yourSiteName", "Products page meta description.");
 /*  */
 
 /* load $http response data into the controller from productsDataFactory */
